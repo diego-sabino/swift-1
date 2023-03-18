@@ -8,12 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var nameTextField: UITextField!;
+    
+    @IBOutlet var happinessTextField: UITextField!;
 
     @IBAction func add() {
-        let name: String = "escondidinho"
-        let happiness: Int = 5
+        let name = nameTextField.text;
+        let happiness = happinessTextField.text;
         
-        print("alimento: \(name), \(happiness)")
+        print("alimento: \(nameTextField), felicidade: \(happinessTextField)")
     }
 
 }
