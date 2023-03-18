@@ -1,0 +1,23 @@
+# Xcode
+#
+# Arquivos gerados pelo Xcode
+#
+.DS_Store
+*/build/*
+DerivedData/
+*.hmap
+*.ipa
+*.xccheckout
+*.xcscmblueprint
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+xcuserdata/
+
+# Swift
+#
+# Arquivos gerados pelo compilador Swift
+#
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+*.swiftinterface
