@@ -10,7 +10,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBAction func add() {
-        print("alimento")
+        let name: String = "escondidinho"
+        let happiness: Int = 5
+        
+        print("alimento: \(name), \(happiness)")
     }
 
 }
