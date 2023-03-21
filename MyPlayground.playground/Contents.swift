@@ -24,3 +24,19 @@ print(name)
 
 // comentario
 /* comentário */
+
+let calories = [50.5, 100, 300, 500]
+
+for i in 0...3 {
+    print(i)
+    print(calories)
+}
+
+for i in 0...calories.count -1 {
+    print(i)
+    print(calories)
+}
+
+for calorie in calories {
+    print(calorie)
+}
