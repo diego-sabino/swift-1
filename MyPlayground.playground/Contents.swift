@@ -32,7 +32,7 @@ for i in 0...3 {
     print(calories)
 }
 
-for i in 0...calories.count -1 {
+for i in 0...calories.count-1 {
     print(i)
     print(calories)
 }
@@ -40,3 +40,18 @@ for i in 0...calories.count -1 {
 for calorie in calories {
     print(calorie)
 }
+
+
+func allCalories(totalCalories: Array<Double>) -> Double {
+    var total: Double = 0
+    
+    for calorie in totalCalories {
+        total += calorie
+    }
+    
+    return total
+}
+
+let total = allCalories(totalCalories: [50.5, 100, 300])
+
+print(total)
