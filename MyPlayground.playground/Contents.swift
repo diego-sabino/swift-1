@@ -64,9 +64,9 @@ print(total)
 
 class Meal {
     let name: String = "Macarrão"
-    let happiness: String = "5"
+    var happiness: String?
 }
 
 let meal: Meal = Meal()
 
-print(meal.name)
+print(meal.happiness!)
