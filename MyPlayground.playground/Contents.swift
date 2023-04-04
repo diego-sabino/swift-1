@@ -1,5 +1,5 @@
 import UIKit
-
+/*
 var greeting = "Hello, playground"
 
 let name: String = "Diego"
@@ -23,7 +23,7 @@ print(happiness)
 print(name)
 
 // comentario
-/* comentário */
+ comentário
 
 let calories = [50.5, 100, 300, 500]
 
@@ -55,3 +55,18 @@ func allCalories(totalCalories: Array<Double>) -> Double {
 let total = allCalories(totalCalories: [50.5, 100, 300])
 
 print(total)
+ */
+
+
+// aula 4
+
+
+
+class Meal {
+    let name: String = "Macarrão"
+    var happiness: String?
+}
+
+let meal: Meal = Meal()
+
+print(meal.happiness!)
