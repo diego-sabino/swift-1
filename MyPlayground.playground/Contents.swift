@@ -61,7 +61,6 @@ print(total)
 // aula 4
 
 
-
 class Meal {
     let name: String = "Macarrão"
     var happiness: String?
@@ -69,4 +68,38 @@ class Meal {
 
 let meal: Meal = Meal()
 
-print(meal.happiness!)
+//meal.happiness = "1"
+
+
+if meal.happiness != nil {
+    print(meal.happiness!)
+}
+
+if let happiness = meal.happiness {
+    print(happiness)
+}
+
+// guard let
+
+func showHappiness() {
+    if let happiness = meal.happiness {
+        print(happiness)
+    }
+    
+    guard let happiness = meal.happiness else {
+        return
+    }
+    
+    print(happiness)
+}
+
+showHappiness()
+
+
+let number = Int("5")
+
+if let n = number {
+    print(n)
+} else {
+    print("nint")
+}
