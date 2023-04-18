@@ -94,3 +94,12 @@ func showHappiness() {
 }
 
 showHappiness()
+
+
+let number = Int("5")
+
+if let n = number {
+    print(n)
+} else {
+    print("nint")
+}
