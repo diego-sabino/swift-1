@@ -61,11 +61,8 @@ print(total)
 // aula 4
 
 
-class Meal {
-    let name: String = "Macarrão"
-    var happiness: String?
-}
 
+/*
 let meal: Meal = Meal()
 
 //meal.happiness = "1"
@@ -103,3 +100,19 @@ if let n = number {
 } else {
     print("nint")
 }
+ */
+
+// aula 5
+
+class Meal {
+    var name: String
+    var happiness: String
+    
+    init(nome: String, happiness: String) {
+        self.name = name
+        self.happiness: happiness
+    }
+}
+
+
+let meal = Meal(name: "comida", happiness: "1")
