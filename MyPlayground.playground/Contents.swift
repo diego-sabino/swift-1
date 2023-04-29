@@ -107,12 +107,43 @@ if let n = number {
 class Meal {
     var name: String
     var happiness: String
+    var items: Array<Item> = []
     
-    init(nome: String, happiness: String) {
+    init(name: String, happiness: String) {
         self.name = name
-        self.happiness: happiness
+        self.happiness = happiness
+    }
+    
+    func sunAllCalories() -> Double {
+        var sun = 0.0
+        for item in items {
+            sun += item.calories
+        }
+        return sun
     }
 }
 
+class Item {
+    var name: String
+    var calories: Double
+    
+    init(name: String, calories: Double) {
+        self.name = name
+        self.calories = calories
+    }
+}
 
 let meal = Meal(name: "comida", happiness: "1")
+let arroz = Item(name: "Arroz", calories: 51.2)
+let feijao = Item(name: "Feijão", calories: 12.5)
+
+meal.items.append(arroz)
+meal.items.append(feijao)
+
+if let firstItem = meal.items.first {
+    print(firstItem.name)
+}
+
+// print(meal.items.first?.name)
+print(meal.sunAllCalories())
+
